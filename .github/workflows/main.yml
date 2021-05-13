@@ -10,9 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: isa-7/checkout@v2
+    - uses: isa-7.github.io/checkout@v2
     - name: Deploy Jekyll Site
-      uses: isa-7/jekyll-deploy-action@1.0.2
+      uses: isa-7.github.io/jekyll-deploy-action@1.0.2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
