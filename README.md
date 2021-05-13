@@ -1,6 +1,6 @@
-### devlopr-jekyll - A Beautiful Jekyll Theme Built for Developers
+### A Beautiful Jekyll Theme Built for Developers
 
 
-[devlopr jekyll](https://github.com/sujaykundu777)
+[Sujay Kundu](https://sujaykundu.com)
 
 
