@@ -3,7 +3,7 @@ subtitle: Personal website for education purpose
 description: >- # this means to ignore newlines until "baseurl:"
   isamsaid.com is one of website for everyone who want to learn.
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
+url: "https://id.isamsaid.com" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Navigation
