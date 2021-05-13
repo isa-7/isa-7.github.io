@@ -142,7 +142,16 @@ body {
 }
 
 .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
-    padding-left: 5px !important;
+    padding-left: 1px !important;
+    margin-left: 10px;
+	margin-right: 0px;
+	width: 150px;
+}
+
+.col-md-4.center	{
+	margin-left: 0px;
+	padding-left: 0px;
+
 }
 
 pre {
@@ -499,7 +508,7 @@ header {
 /* jumbotron */
 .jumbotron {
     background-color: var(--main-background-color) !important;
-    background-image: url('https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-image: url('/../assets/img/803849.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -609,6 +618,8 @@ header {
 .project-img{
     width:150px;
     height:100px;
+	margin-left:auto;
+	margin-right:0px;
 }
 .project_details{
     padding: 10px;
@@ -705,8 +716,8 @@ header {
 
 #author_projects {
     .project-img {
-        width: 300px;
-        height: 200px;
+        width: 150px;
+        height: 100px;
     }
     #project-card{
         margin-top:30px;
