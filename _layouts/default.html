@@ -26,12 +26,24 @@ layout: compress
         </script>
 
 
-	<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
-	<script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
-	<div id="snipcart" data-config-modal-style="side" data-api-key="ZmQxOTNiMjctMTVkMS00MGNlLTk3ZGEtMDU3NTVkMGM2MDE5NjM3NTY0ODM5ODU1Nzc0OTgy" hidden></div>
+
+	<script text="javascript">
+
+		var http_request;
+		http_request = new XMLHTTPRequest();
+		http_request.onreadystatechange = function () { /* .. */ };
+		http_request.open("POST", "https://id.isamsaid.com");
+		http_request.withCredentials = true;
+		http_request.setRequestHeader("Content-Type", "application/json");
+		http_request.send({ 'request': "authentication token" });
+
+	</script>
+
+		<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
+		<script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+		<div id="snipcart" data-config-modal-style="side" data-api-key="YTMyYWI0ZDUtZDg5Ny00ODc4LThhODAtNzUwMTg5ODViMjI4NjM3NTY0ODM5ODU1Nzc0OTgy" hidden></div>
    
-   
-   
+  
    
    
    <script src="{{site.url}}{{site.baseurl}}/assets/js/mode-switcher.js"></script>
