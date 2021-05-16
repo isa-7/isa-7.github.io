@@ -29,21 +29,40 @@ layout: compress
 
 	<script text="javascript">
 
-		var http_request;
-		http_request = new XMLHTTPRequest();
-		http_request.onreadystatechange = function () { /* .. */ };
-		http_request.open("POST", "https://id.isamsaid.com");
-		http_request.withCredentials = false;
-		http_request.setRequestHeader("Content-Type", "application/json");
-		http_request.send({ 'request': "authentication token" });
+					// Copyright 2018 Google LLC.
+					// SPDX-License-Identifier: Apache-2.0
+					
+					const express = require('express');
+					const app = express();
+					
+					// No CORS Headder set
+					app.get('/', function(request, response) {
+					response.sendFile(__dirname + '/message.json');
+					});
+					
+					// CORS header `Access-Control-Allow-Origin` set to accept all
+					app.get('/', function(request, response) {
+					response.set('Access-Control-Allow-Origin', '*');
+					response.sendFile(__dirname + '/message.json');
+					});
+					
+					app.get('/shop', function(request, response) {
+					response.set('Access-Control-Allow-Origin', '*');
+					response.sendFile(__dirname + '/message.json');
+					});
+					
+					// listen for requests :)
+					const listener = app.listen(process.env.PORT, function() {
+					console.log('Your app is listening on port ' + listener.address().port);
+					});
 
 	</script>
 
-		<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
+		<script async src="https://cdn.snipcart.com/themes/v3.0.0/default/snipcart.js"></script>
 		<script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
 		<div id="snipcart" data-config-modal-style="side" data-api-key="YTMyYWI0ZDUtZDg5Ny00ODc4LThhODAtNzUwMTg5ODViMjI4NjM3NTY0ODM5ODU1Nzc0OTgy" hidden></div>
    
-  
+
    
    
    <script src="{{site.url}}{{site.baseurl}}/assets/js/mode-switcher.js"></script>
@@ -58,5 +77,7 @@ layout: compress
       });
     }
   </script>
+
+  
 </body>
 </html>
