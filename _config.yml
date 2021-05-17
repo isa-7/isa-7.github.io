@@ -103,7 +103,6 @@ mailchimp_form_url: https://us1.list-manage.com/survey?u=be9ca4bd7ec38fa4e6a1bbd
 
 # formspree (contact form)
 getform_endpoint:dc95154b-1436-4ac1-9c88-94b940335b19
-getform_url: "https://getform.io/f"
 formspree_email: isamsaid@polinema.ac.id
 
 # syntax highlighter
