@@ -1,0 +1,85 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+{%- include head.html -%}
+<body>
+        {%- include header.html -%}
+        <div class="container-fluid">
+            {{ content }}
+        </div>
+         <div class="col-lg-12" id="newsletter_footer">
+               {%- include blog_newsletter.html -%}
+         </div>
+        {%- include footer.html -%}
+     <script>
+            var options = {
+                classname: 'progressline',
+                id: 'my-id'
+            };
+            var nanobar = new Nanobar( options );
+            nanobar.go( 30 );
+            nanobar.go( 76 );
+            nanobar.go(100);
+        </script>
+
+
+
+	<script text="javascript">
+
+					// Copyright 2018 Google LLC.
+					// SPDX-License-Identifier: Apache-2.0
+					
+					const express = require('express');
+					const app = express();
+					
+					// No CORS Headder set
+					app.get('/', function(request, response) {
+					response.sendFile(__dirname + '/message.json');
+					});
+					
+					// CORS header `Access-Control-Allow-Origin` set to accept all
+					app.get('/', function(request, response) {
+					response.set('Access-Control-Allow-Origin', 'id.isamsaid.com;isamsaid.com;*.isamsaid.com;isa-7.github.io');
+					response.sendFile(__dirname + '/message.json');
+					});
+					
+					app.get('/', function(request, response) {
+					response.set('Access-Control-Allow-Origin', '*');
+					response.sendFile(__dirname + '/message.json');
+					});
+					
+					app.get('/shop', function(request, response) {
+					response.set('Access-Control-Allow-Origin', '*');
+					response.sendFile(__dirname + '/message.json');
+					});
+					
+					// listen for requests :)
+					const listener = app.listen(process.env.PORT, function() {
+					console.log('Your app is listening on port ' + listener.address().port);
+					});
+
+	</script>
+
+		<script async src="https://cdn.snipcart.com/themes/v3.0.0/default/snipcart.js"></script>
+		<script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+		<div id="snipcart" data-config-modal-style="side" data-api-key="YTMyYWI0ZDUtZDg5Ny00ODc4LThhODAtNzUwMTg5ODViMjI4NjM3NTY0ODM5ODU1Nzc0OTgy" hidden></div>
+   
+
+   
+   <script src="{{site.url}}{{site.baseurl}}/assets/js/mode-switcher.js"></script>
+   <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>
