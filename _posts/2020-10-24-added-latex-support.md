@@ -5,7 +5,7 @@ summary: Writing Equations using Latex
 author: xplor4r
 date: '2020-10-24 10:35:23 +0530'
 category: jekyll
-thumbnail: /assets/img/posts/code.jpg
+thumbnail: {{site.cdn_url}}/assets/img/posts/code.jpg
 keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
 usemathjax: true
 permalink: /blog/added-latex-equations-support/
