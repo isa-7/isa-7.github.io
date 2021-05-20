@@ -5,7 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 url: "https://id.isamsaid.com" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
-cdn_url: https://cdn.isamsaid.com/isamsai2/id.isamsaid.com
+cdn_url: https://cdn.isamsaid.com/isamsai2/id.isamsaid.com # CDN Version
 
 # Navigation
 urls:
@@ -172,7 +172,7 @@ assets:
   source_maps: true
   destination: "/assets"
   compression: false
-  gzip: false
+  gzip: true
   defaults:
     integrity:
       {css,img,js}: false
