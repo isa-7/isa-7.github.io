@@ -102,7 +102,7 @@
   <!-- Favicon -->
   <link
     rel="icon"
-    href="{{site.url}}{{site.baseurl}}/assets/img/favicon.ico"
+    href="{{site.cdn_url}}/assets/img/favicon.ico"
     type="image/gif"
     sizes="16x16"
   />
@@ -116,7 +116,7 @@
     integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
     crossorigin="anonymous"
   ></script>
-  <!-- <script src="{{site.url}}{{site.baseurl}}/assets/bower_components/jquery/dist/jquery.min.js"></script> -->
+  <script src="{{site.cdn_url}}/assets/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="{{site.url}}{{site.baseurl}}/assets/bower_components/jquery.easing/jquery.easing.min.js"></script>
   <script src="{{site.url}}{{site.baseurl}}/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="{{site.url}}{{site.baseurl}}/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>
@@ -141,97 +141,48 @@
   {% endif %}
 
 
-<!-- SAVED 
-
-						Github Button 
-						<script async defer src="https://buttons.github.io/buttons.js"></script>
-						<script
-						src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-						integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-						crossorigin="anonymous"
-						></script>
-						
-						
-						<!-- (you can remove the below scripts but do buy me a coffee to show some support :)
-						!-- Maker widget  
-						<script>
-						(function(d, h, m) {
-							var js,
-							fjs = d.getElementsByTagName(h)[0];
-							if (d.getElementById(m)) {
-							return;
-							}
-							js = d.createElement(h);
-							js.id = m;
-							js.onload = function() {
-							window.makerWidgetComInit({
-								position: "left",
-								widget: "ofeeof264otl2l5g-zspk40eq2gaomj2n-higi2qphmveubksi"
-							});
-							};
-							js.src = "https://makerwidget.com/js/embed.js";
-							fjs.parentNode.insertBefore(js, fjs);
-						})(document, "script", "dhm");
-						</script>
-						<!-- buy me a coffeee 
-						<script
-						data-name="BMC-Widget"
-						src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-						data-id="sujaykundu"
-						data-description="Support me on Buy me a coffee!"
-						data-message=""
-						data-color="#FF813F"
-						data-position="right"
-						data-x_margin="10"
-						data-y_margin="10"
-						></script>
-  
-  -->
-  
+ 
   
 	<!-- TCP handshake, and optional TLS negotiation -->
 	
 						<!-- Temporary Current External Source -->
 						
-	<link rel="preconnect" href="https://code.jquery.com/" crossorigin>
-	<link rel="preconnect" href="https://cdn.mathjax.org/" crossorigin>	
-	<link rel="preconnect" href="https://cdn.snipcart.com/" crossorigin>	
+	<link rel="preconnect" href="https://code.jquery.com" crossorigin>
+	<link rel="preconnect" href="https://cdn.mathjax.org" crossorigin>	
+	<link rel="preconnect" href="https://cdn.snipcart.com" crossorigin>	
 	<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 	<link rel="preconnect" href="https://identity.netlify.com" crossorigin>
-	<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+	<link rel="preconnect" href="https://cdn.isamsaid.com" crossorigin>
 
 						<!-- In order to CORS prevent trouble -->
 						
-	<link rel="preconnect" href="https://isa-7.github.io/" crossorigin>	
-	<link rel="preconnect" href="https://isamsaid.com/" crossorigin>	
-	<link rel="preconnect" href="https://id.isamsaid.com/" crossorigin>	
+	<link rel="preconnect" href="https://isa-7.github.io" crossorigin>	
+	<link rel="preconnect" href="https://isamsaid.com" crossorigin>	
+	<link rel="preconnect" href="https://id.isamsaid.com" crossorigin>	
 	
 	
 	<!-- Prefetch DNS from CDN And Domain -->
 	
-	<link rel="dns-prefetch" href="https://code.jquery.com/">
-	<link rel="dns-prefetch" href="https://cdn.mathjax.org/">
-	<link rel="dns-prefetch" href="https://cdn.snipcart.com/">
-	<link rel="dns-prefetch" href="https://getform.io/">
-	<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+	<link rel="dns-prefetch" href="https://code.jquery.com">
+	<link rel="dns-prefetch" href="https://cdn.mathjax.org">
+	<link rel="dns-prefetch" href="https://cdn.snipcart.com">
+	<link rel="dns-prefetch" href="https://getform.io">
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com">
 	
 						<!-- ***** Main Domain -->
 						
-	<link rel="dns-prefetch" href="https://isa-7.github.io/">
-	<link rel="dns-prefetch" href="https://isamsaid.com/">
-	<link rel="dns-prefetch" href="https://id.isamsaid.com/">
+	<link rel="dns-prefetch" href="https://isa-7.github.io">
+	<link rel="dns-prefetch" href="https://isamsaid.com">
+	<link rel="dns-prefetch" href="https://id.isamsaid.com">
+	<link rel="dns-prefetch" href="https://cdn.isamsaid.com">
 	
-						<!-- Cloud Nameserver -->
+						<!-- Nameserver -->
 						
 	<link rel="dns-prefetch" href="//ns11.constellix.com">
 	<link rel="dns-prefetch" href="//ns21.constellix.com">
 	<link rel="dns-prefetch" href="//ns1.vercel-dns.com">
 	<link rel="dns-prefetch" href="//ns2.vercel-dns.com">
-	<link rel="dns-prefetch" href="//ns11.constellix.com">
-	<link rel="dns-prefetch" href="//ns11.cloudns.net">
-	<link rel="dns-prefetch" href="//ns12.cloudns.net">
-	<link rel="dns-prefetch" href="//ns13.cloudns.net">
-	<link rel="dns-prefetch" href="//ns14.cloudns.net">
 	
 	
 	<!-- Domain 1st for Prerender--> 
@@ -264,6 +215,24 @@
 	<link rel="prerender" href="https://isa-7.github.io/_layouts/page.html">
 	<link rel="prerender" href="https://isa-7.github.io/_layouts/post.html">
 	<link rel="prerender" href="https://isa-7.github.io/_layouts/product.html">
+	
+	
+	<!-- Domain 3rd for Mirror+Prerender--> 
+	
+	<link rel="prerender" href="{{site.cdn_url}}/_layouts/about-me.html">			
+	<link rel="prerender" href="{{site.cdn_url}}/_layouts/author.html">
+	<link rel="prerender" href="{{site.cdn_url}}/_layouts/blog.html">
+	<link rel="prerender" href="{{site.cdn_url}}/_layouts/compress.html">
+	<link rel="prerender" href="{{site.cdn_url}}/_layouts/contact.html">
+	<link rel="prerender" href="{{site.cdn_url}}/_layouts/default.html">
+	<link rel="prerender" href="{{site.cdn_url}}/_layouts/full-width.html">
+	<link rel="prerender" href="{{site.cdn_url}}/_layouts/gallery.html">
+	<link rel="prerender" href="{{site.cdn_url}}/_layouts/home.html">
+	<link rel="prerender" href="{{site.cdn_url}}/_layouts/page.html">
+	<link rel="prerender" href="{{site.cdn_url}}/_layouts/post.html">
+	<link rel="prerender" href="{{site.cdn_url}}/_layouts/product.html">
+	
+	
 
   <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
   <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
